@@ -39,6 +39,12 @@ export class ApiServiceService {
     
     return this.makeRequest('https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/get-summary?region=US&lang=en')
   }
+  getnews(): Observable<Object> {
+    return this.makeRequest('https://apidojo-yahoo-finance-v1.p.rapidapi.com/news/list?category=generalnews&region=US');
+   
+      
+  
+  }
 
   getPortfolioData(): any {
 

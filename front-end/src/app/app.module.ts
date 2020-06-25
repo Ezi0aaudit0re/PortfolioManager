@@ -22,6 +22,7 @@ import { AuthService } from './services/auth.service';
 import { AuthGuardService } from './services/auth-guard.service';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { NewsComponent } from './components/news/news.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     LoginComponent,
     ListStocksComponent,
     MainPageComponent,
-    ProfileComponent
+    ProfileComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
