@@ -57,6 +57,7 @@ export class ApiServiceService {
 
 
 
+<<<<<<< HEAD
 	/** 
 	 * THis method gets a single stock data 
 	 */
@@ -66,6 +67,34 @@ export class ApiServiceService {
 	}
 
 
+=======
+  makeRequest(url: string): Observable<Object> {
+    return this.http.get(
+      url,
+      {
+        headers: {
+          'x-rapidapi-host': 'apidojo-yahoo-finance-v1.p.rapidapi.com',
+          'x-rapidapi-key': '4927cfb37dmsh7d7fd05e60e6346p13bd0djsn1d90f07486b4'
+        }
+      }
+    )
+  }
+
+
+  /** 
+   * Get data of all the stocks 
+   */
+  getStocksData(): Observable<Object> {
+    
+    return this.makeRequest('https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/get-summary?region=US&lang=en')
+  }
+  getnews(): Observable<Object> {
+    return this.makeRequest('https://apidojo-yahoo-finance-v1.p.rapidapi.com/news/list?category=generalnews&region=US');
+   
+      
+  
+  }
+>>>>>>> febc8267d49ade33799edd609ba606bfabeaf0d2
 
 	/**
 	 * Add flagged stock symbol to local storage
@@ -88,6 +117,15 @@ export class ApiServiceService {
 		});
 	}
 
+<<<<<<< HEAD
+=======
+  /** 
+   * THis method gets a single stock data 
+   */
+  getStockData(symbol: string): Observable<Object> {
+    return this.makeRequest(`https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-summary?region=US&symbol=${symbol}`)
+  }
+>>>>>>> febc8267d49ade33799edd609ba606bfabeaf0d2
 
 
 

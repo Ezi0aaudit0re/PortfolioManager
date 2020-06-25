@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .search-box{
     padding: 10px;
     margin: 0 auto;
@@ -17,4 +18,12 @@
 .summary-button{
     padding: 10px;
     margin: 10px;
+=======
+.nav-item a:hover{
+    background-color: silver;
+    cursor: pointer;
+}
+input .search-bar{
+    padding:1vh;
+>>>>>>> febc8267d49ade33799edd609ba606bfabeaf0d2
 }

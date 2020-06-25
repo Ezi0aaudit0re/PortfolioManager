@@ -1,4 +1,5 @@
 <div class="container">
+<<<<<<< HEAD
     <div *ngIf="(user | async)?.uid">
         <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
@@ -29,11 +30,51 @@
                 <app-list-stocks (getStockData)="getChildStockData($event)" [stocksInformation]="interestedStocks"></app-list-stocks>
             </div>
 
+=======
 
+    <div *ngIf="(user | async)?.uid">
+        <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active " id="pills-home-tab" data-toggle="pill" routerLink="/home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" routerLink="/profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" (click)="logOut()" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Log Out</a>
+            </li>
+        </ul>
+
+        <!-- Search form -->
+        <div class="md-form active-pink mt-0 sticky-top">
+            <input class="form-control search-bar" type="text" placeholder="Search Stock ( symbol )" aria-label="Search"
+                [(ngModel)]="stockSymbol" (keyup)="getStockData($event)" required>
         </div>
 
+        <div class="row container-fluid">
+            <!-- list component  -->
+            <div class="col list-component-main-page">
+                <div *ngIf="interestedStocks.length > 0">
+                    <h2> Flagged </h2>
+                </div>
+
+                <div>
+                    <app-list-stocks></app-list-stocks>
+                </div>
+
+            </div>
+>>>>>>> febc8267d49ade33799edd609ba606bfabeaf0d2
 
 
+
+            <div class="col list-summary-main-page">
+                <h1>Detailed Summary</h1>
+            </div>
+
+<<<<<<< HEAD
 
     </div>
 
@@ -90,4 +131,21 @@
 
 
 
+=======
+        </div>
+    </div>
+    <div *ngIf="!(user | async)?.uid">
+    <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills-home"
+                aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" routerLink="/sign-in" role="tab"
+                aria-controls="pills-profile" aria-selected="false">Login</a>
+        </li>
+    </ul>
+    <app-list-stocks></app-list-stocks>
+</div>
+>>>>>>> febc8267d49ade33799edd609ba606bfabeaf0d2
 </div>
