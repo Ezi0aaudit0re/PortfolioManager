@@ -29,12 +29,25 @@
                 <app-list-stocks (getStockData)="getChildStockData($event)" [stocksInformation]="interestedStocks"></app-list-stocks>
             </div>
 
+    </div>
 
-
-
-            <div class="col list-summary-main-page">
-                <h1>Detailed Summary</h1>
+  
+   <div class="row text-center">
+    <img [src]='loadingSrc' *ngIf="loading" class="rounded">
+   </div> 
+    <div class="stock-summary" *ngIf="stockFocusData && !loading">
+        <div class="row summary-header" >
+            <div class="col">
+                <h3> {{stockFocusData.response.name}} <span [style.color]="'#00FF00'">{{stockFocusData.response.financialData.currentPrice}} {{stockFocusData.response.financialData.financialCurrency}}</span></h3>
             </div>
+            <!-- /.col -->
+            <div class="col">
+                <button class="btn btn-primary summary-button" (click)="addFlaggedStock(stockSymbol)">
+                    Flag Stock
+                    <!-- <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> -->
+                </button> <!-- /.btn -->
+            </div>
+            <!-- /.col -->
 
 
     </div>

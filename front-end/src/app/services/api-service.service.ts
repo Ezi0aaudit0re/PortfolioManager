@@ -88,16 +88,6 @@ export class ApiServiceService {
 		});
 	}
 
-<<<<<<< HEAD
-  /** 
-   * THis method gets a single stock data 
-   */
-  getStockData(symbol: string): Observable<Object> {
-    return this.makeRequest(`https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-summary?region=US&symbol=${symbol}`)
-  }
-=======
->>>>>>> fd592db8c9a58668080fed467c9b3298f1c77922
-
 
 
 
