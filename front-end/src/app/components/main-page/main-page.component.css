@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 .nav-link{
     cursor: pointer;
 }
+=======
+<<<<<<< HEAD
+>>>>>>> 0bfc34cb7b1c0a0fa23086055b1c3fefdbc205eb
 .search-box{
     padding: 10px;
     margin: 0 auto;
@@ -20,4 +24,15 @@
 .summary-button{
     padding: 10px;
     margin: 10px;
+<<<<<<< HEAD
+=======
+=======
+.nav-item a:hover{
+    background-color: silver;
+    cursor: pointer;
+}
+input .search-bar{
+    padding:1vh;
+>>>>>>> febc8267d49ade33799edd609ba606bfabeaf0d2
+>>>>>>> 0bfc34cb7b1c0a0fa23086055b1c3fefdbc205eb
 }

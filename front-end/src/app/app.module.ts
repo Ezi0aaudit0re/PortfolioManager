@@ -19,11 +19,24 @@ import { environment } from 'src/environments/environment';
 
 import { LoginComponent } from './components/login/login.component';
 import { AuthService } from './services/auth.service';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0bfc34cb7b1c0a0fa23086055b1c3fefdbc205eb
 
 import { AuthGuardService } from './services/auth-guard.service';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { ChartModule } from 'angular-highcharts';
 import { ColorGeneratorPipe } from './pipes/color-generator.pipe';
+<<<<<<< HEAD
+=======
+=======
+import { AuthGuardService } from './services/auth-guard.service';
+import { MainPageComponent } from './components/main-page/main-page.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { NewsComponent } from './components/news/news.component';
+>>>>>>> febc8267d49ade33799edd609ba606bfabeaf0d2
+>>>>>>> 0bfc34cb7b1c0a0fa23086055b1c3fefdbc205eb
 
 @NgModule({
   declarations: [
@@ -31,7 +44,16 @@ import { ColorGeneratorPipe } from './pipes/color-generator.pipe';
     LoginComponent,
     ListStocksComponent,
     MainPageComponent,
+<<<<<<< HEAD
     ColorGeneratorPipe
+=======
+<<<<<<< HEAD
+    ColorGeneratorPipe
+=======
+    ProfileComponent,
+    NewsComponent
+>>>>>>> febc8267d49ade33799edd609ba606bfabeaf0d2
+>>>>>>> 0bfc34cb7b1c0a0fa23086055b1c3fefdbc205eb
   ],
   imports: [
     BrowserModule,

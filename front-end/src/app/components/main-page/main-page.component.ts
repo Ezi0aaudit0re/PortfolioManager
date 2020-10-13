@@ -114,7 +114,7 @@ export class MainPageComponent implements OnInit {
 				console.log(this.stockFocusData);
 
 				// call to plot charts
-				this.plotCharts(<summaryStockData>this.stockFocusData.response)
+				this.plotCharts(this.stockFocusData.response as summaryStockData)
 
 				this.loading = !this.loading;
 
@@ -129,6 +129,7 @@ export class MainPageComponent implements OnInit {
 	 */
 	plotCharts(data: summaryStockData): void{
 
+<<<<<<< HEAD
   logOut() {
     this.authService.logout();
   }
@@ -261,6 +262,9 @@ export class MainPageComponent implements OnInit {
 	 */
 	plotCharts(data: summaryStockData): void{
 
+=======
+<<<<<<< HEAD
+>>>>>>> 0bfc34cb7b1c0a0fa23086055b1c3fefdbc205eb
 		console.log(data)
 
 		this.expectedEarnings = new Chart({
@@ -291,6 +295,20 @@ export class MainPageComponent implements OnInit {
 				},
 			]
 		});
+<<<<<<< HEAD
+=======
+=======
+  logOut() {
+    this.authService.logout();
+  }
+  /** 
+   * Convert the result to our stock data interface 
+   */
+  // convertToStockData<T extends ResponseResult>(obj: T): StockData{
+  //   return obj
+  // }
+>>>>>>> febc8267d49ade33799edd609ba606bfabeaf0d2
+>>>>>>> 0bfc34cb7b1c0a0fa23086055b1c3fefdbc205eb
 
 		let earnings: Array<{actual: String, date: number, expected: String}> = data.earningsChart
 		let actual: Array<number> = []
