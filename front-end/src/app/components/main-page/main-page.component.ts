@@ -17,7 +17,6 @@ export class MainPageComponent implements OnInit {
 	interestedStocks: ResponseResult;
 	// store the data of the stock that is clicked on or searched
 	stockFocusData: ResponseResult;
-<<<<<<< HEAD
 
 	stockSymbol: string;
 
@@ -130,7 +129,6 @@ export class MainPageComponent implements OnInit {
 	 */
 	plotCharts(data: summaryStockData): void{
 
-<<<<<<< HEAD
   logOut() {
     this.authService.logout();
   }
@@ -140,38 +138,6 @@ export class MainPageComponent implements OnInit {
   // convertToStockData<T extends ResponseResult>(obj: T): StockData{
   //   return obj
   // }
-=======
-		console.log(data)
-
-		this.expectedEarnings = new Chart({
-			chart: {
-				type: "line"
-			},
-			title: {
-				text: 'Expected Earning'
-			},
-			credits: {
-				enabled: false
-			},
-			series: [
-				{
-				type: 'line',
-				name: 'Target High',
-				data: [Number(data.financialData.currentPrice), data.meanDataChart.targetHigh]
-				},
-				{
-				type: 'line',
-				name: 'Target Median',
-				data: [Number(data.financialData.currentPrice), data.meanDataChart.targetMedian]
-				},
-				{
-				type: 'line',
-				name: 'Target Low',
-				data: [ Number(data.financialData.currentPrice), data.meanDataChart.targetLow]
-				},
-			]
-		});
->>>>>>> fd592db8c9a58668080fed467c9b3298f1c77922
 
 		let earnings: Array<{actual: String, date: number, expected: String}> = data.earningsChart
 		let actual: Array<number> = []
@@ -182,7 +148,7 @@ export class MainPageComponent implements OnInit {
 			expected.push(Number(quater.expected))
 		}
 
-=======
+
 
 	stockSymbol: string;
 
